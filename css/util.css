@@ -1,0 +1,39 @@
+:root {
+    --uscgreen: #00A950;
+    --uscblue: #009DDC;
+    --uscred: #EE2E24;
+    --uscyellow: #FFC423;
+}
+
+
+.padding-sm {
+    padding: 10px;
+}
+
+.padding-sm-reverse {
+
+}
+
+.padding-md {
+    padding: 15px;
+}
+
+.padding-lg {
+    padding: 20px;
+}
+
+.padding-xlg {
+    padding: 30px;
+}
+
+.padding-xxlg {
+    padding: 40px;
+}
+
+.padding-xxxlg {
+    padding: 55px;
+}
+
+.center_content {
+    justify-content: center;
+}

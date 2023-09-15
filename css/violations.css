@@ -1,0 +1,135 @@
+.ac-vio-array {
+    display: flex;
+    flex-direction: row;
+}
+
+.add-student-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: var(--uscgreen);
+    border-radius: 8px;
+
+    
+    height: fit-content;
+    padding: 15px;
+    padding-right: 4em;
+    margin: 10px;
+
+}
+
+.add-student-wrapper:hover {
+    background: #0bbf5f;
+}
+
+.add-student-wrapper:active {
+    background-color: #f0f0f1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.add-student-wrapper i {
+    padding: 15px;
+}
+
+.add-student-wrapper > .info {
+    padding: 15px;
+    text-align: center;
+}
+
+.add-student-wrapper > .info > h1, h2 {
+    font-family: "Lexend", sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+.add-student-wrapper > .info > h3 {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+.add-student-wrapper > .info > h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+.student-active-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: rgba(253, 253, 253, 0.166);
+    border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0.317);
+    height: fit-content;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0px 0.3px 2.9px rgba(0, 0, 0, 0.07),
+        0px 0.8px 6.6px rgba(0, 0, 0, 0.053),
+        0px 1.3px 11.5px rgba(0, 0, 0, 0.046),
+        0px 2.1px 18.3px rgba(0, 0, 0, 0.04),
+        0px 3.3px 28.2px rgba(0, 0, 0, 0.035),
+        0px 5.1px 44px rgba(0, 0, 0, 0.03),
+        0px 8.5px 73.1px rgba(0, 0, 0, 0.024),
+        0px 17px 146px rgba(0, 0, 0, 0.017);
+    -webkit-box-shadow: 0px 0.3px 2.9px rgba(0, 0, 0, 0.07),
+        0px 0.8px 6.6px rgba(0, 0, 0, 0.053),
+        0px 1.3px 11.5px rgba(0, 0, 0, 0.046),
+        0px 2.1px 18.3px rgba(0, 0, 0, 0.04),
+        0px 3.3px 28.2px rgba(0, 0, 0, 0.035),
+        0px 5.1px 44px rgba(0, 0, 0, 0.03),
+        0px 8.5px 73.1px rgba(0, 0, 0, 0.024),
+        0px 17px 146px rgba(0, 0, 0, 0.017);
+}
+
+.student-active-wrapper:hover {
+    background: rgba(253, 253, 253, 0.742);
+    border: 2px solid var(--uscgreen);
+}
+
+.student-active-wrapper:active {
+    background-color: #f0f0f1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.student-active-wrapper i {
+    padding: 10px;
+}
+
+.student-active-wrapper > .info {
+    padding: 15px;
+    text-align: left;
+}
+
+.student-active-wrapper > .info > h1,
+h2 {
+    font-family: "Lexend", sans-serif;
+    font-weight: 500;
+    text-align: left;
+}
+
+.student-active-wrapper > .info > h3 {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 300;
+    text-align: left;
+}
+
+.student-active-wrapper > .info > h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    text-align: left;
+    cursor: pointer;
+}

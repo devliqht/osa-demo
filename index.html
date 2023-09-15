@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<head>
+    <title>OSA Violation Tracker</title>
+    <!--Meta-->
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://devliqht.github.io/osa-violation-tracker">
+    <meta property="og:title" content="OSA Violation Tracker">
+    <meta property="og:description" content="Office of Student Affairs Violation Tracker by Matt & Faye from USC-NC G12 STEM ST">
+    <meta property="og:image" content="https://devliqht.github.io/hobby-project/assets/meta.png"> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/1fb0157614.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/util.css">
+    <link rel="stylesheet" href="css/searchbar.css">
+    <link rel="stylesheet" href="css/violations.css">
+    <link rel="stylesheet" href="node_modules/nice-forms.css/dist/nice-forms.css">
+
+
+    <link rel="icon" href="assets/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;400&family=Quicksand:wght@300;400&family=Roboto:wght@100;300;400;500&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="page-body-wrapper">
+            <header>
+                <div class="header-wrapper">
+
+                    <div class="search__container">
+                        <input class="search__input" type="text" placeholder="Search">
+                    </div>
+                    <div class="padding-md"></div>
+                    <div class="school-logo">
+                        <img src="assets/reportheader1.png">
+                    </div>
+
+                </div>
+            </header>
+            <main>
+                <div class="main-body-wrapper">
+                      <div class="add-student-modal" id="add-student-modal">
+                        <div class="student-modal-content">
+                            <span style="display: flex; flex-direction: row; align-items: center; justify-content: space-between;">
+                                <h1>Add Student</h1>
+                                <div class="padding-lg"></div>
+                                <a href="#" class="button-close"><i class="fa-solid fa-xmark fa-2x"></i></a>
+                            </span>
+                            <hr style="width: 100%;
+                            height: 4px;
+                            background-color: var(--uscgreen);
+                            border: none;">
+
+                            <div class="nice-form-group">
+                                <label>Name of Student</label>
+                                <input type="text" placeholder="Your name" />
+                            </div>
+                            <div class="nice-form-group">
+                                <label>Student ID</label>
+                                <input type="number" placeholder="ex. 22103604" />
+                              </div>
+                              
+                            <div class="nice-form-group">
+                                <label>Blocksection</label>
+                                <select>
+                                  <option>STEM 12 ST</option>
+                                  <option>STEM 12 S1</option>
+                                  <option>STEM 12 S2</option>
+                                  <option>STEM 12 S3</option>
+                                  <option>STEM 12 S4</option>
+                                  <option>STEM 12 S5</option>
+                                  <option>STEM 12 S6</option>
+                                  <option>STEM 12 S7</option>
+                                  <option>STEM 12 S8</option>
+                                  <option>STEM 12 S9</option>
+                                  <option>STEM 12 S10</option>
+                                  <option>STEM 12 T1</option>
+                                  <option>STEM 12 T2</option>
+                                  <option>STEM 12 T3</option>
+                                  <option>STEM 12 E1</option>
+                                  <option>STEM 12 E2</option>
+                                  <option>STEM 12 E3</option>
+                                  <option>STEM 12 E4</option>
+                                  <option>STEM 12 E5</option>
+                                  <option>STEM 12 E6</option>
+                                  <option>STEM 12 E7</option>
+
+                                </select>
+                            </div>
+                            <div class="nice-form-group">
+                                <label>Details of Violation/Offense</label>
+                                <textarea rows="5" value=""></textarea>
+                              </div>
+
+                              <div class="nice-form-group">
+                                <label>Date of Violation/Offense Committed</label>
+                                <input type="date" value="2018-07-22" />
+                              </div>
+                        </div>
+                      </div>
+
+                    <div class="ac-vio-array">
+                        <a class="button-open" href="#add-student-modal">
+                            <div class="add-student-wrapper">
+                                <i class="fa-solid fa-plus fa-2x"></i>
+                                <div class="info">
+                                    <h2>Add Student</h2>
+                                    <h3>Select an option</h3>
+                                </div>
+                            </div>
+                        </a>
+
+                        <div class="student-active-wrapper">
+                            <i class="fa-solid fa-user fa-2x"></i>
+                            <div class="info">
+                                <h2>Matt Cabarrubias</h2>
+                                <h3>Status: <span style="color: var(--uscred);">Active Violation</span></h3>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical fa-2x"></i>
+                        </div>
+
+                        <div class="student-active-wrapper">
+                            <i class="fa-solid fa-user fa-2x"></i>
+                            <div class="info">
+                                <h2>Betz Hayag</h2>
+                                <h3>Status: <span style="color: var(--uscred);">Active Violation</span></h3>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical fa-2x"></i>
+                        </div>
+
+                        <div class="student-active-wrapper">
+                            <i class="fa-solid fa-user fa-2x"></i>
+                            <div class="info">
+                                <h2>Alfay-aht Akbar</h2>
+                                <h3>Status: <span style="color: var(--uscgreen);">Resolved</span></h3>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical fa-2x"></i>
+                        </div>
+
+
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

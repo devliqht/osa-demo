@@ -1,0 +1,42 @@
+.button-open {
+  text-decoration: none;
+  color: white;
+}
+.button-close {
+    text-decoration: none;
+    color: black;
+  }
+
+.add-student-modal {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.501);
+
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+.add-student-modal:target {
+  opacity: 1;
+  visibility: visible;
+}
+.student-modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 32em;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.popup__text {
+  font-size: 1.4rem;
+  margin-bottom: 4rem;
+}
