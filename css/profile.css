@@ -1,11 +1,17 @@
-.button-open {
+.button-open-add {
   text-decoration: none;
   color: white;
 }
+
+.button-open-profile {
+  text-decoration: none;
+  color: black;
+}
+
 .button-close {
     text-decoration: none;
     color: black;
-  }
+}
 
 .add-student-modal {
   height: 100vh;
@@ -39,4 +45,53 @@
 .popup__text {
   font-size: 1.4rem;
   margin-bottom: 4rem;
+}
+
+.student-profile {
+  display: flex;
+  flex-direction: column;
+}
+.student-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.student-icon {
+  margin: 20px;
+}
+.student-icon img {
+  width: 128px;
+}
+
+.student-details {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.student-details .name, .id, .blocksection {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+
+.violation-details {
+  display: flex;
+  flex-direction: row;
+  margin-top: 8px;
+  background: rgba(249, 249, 249, 0.736);
+  border: 2px solid rgba(0, 0, 0, 0.317);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.student-active-violations {
+  margin-bottom: 15px;
+}
+.violation-details:hover {
+  border: 2px solid var(--uscgreen);
+}
+
+.violation-details h3 {
+  text-align: justify;
 }
