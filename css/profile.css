@@ -1,11 +1,13 @@
 .button-open-add {
   text-decoration: none;
   color: white;
+  width: fit-content;
 }
 
 .button-open-profile {
   text-decoration: none;
   color: black;
+  width: fit-content;
 }
 
 .button-close {

@@ -14,6 +14,7 @@
     <script src="https://kit.fontawesome.com/1fb0157614.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/profile.css">
     <link rel="stylesheet" href="css/util.css">
     <link rel="stylesheet" href="css/searchbar.css">
@@ -46,12 +47,21 @@
             </header>
             <main>
                 <div class="main-body-wrapper">
-
+                    <h1 class="main-header">Today is <span id="today-date" style="color: var(--uscgreen);">17 September 2023</span>, <span id="today-time" style="color: var(--uscgreen);">12:05 PM</span></h1>
+                        <a class="button-open-add" href="#add-student-modal">
+                            <div class="add-student-wrapper">
+                                <i class="fa-solid fa-plus fa-2x"></i>
+                                <div class="info">
+                                    <h2>Add Student</h2>
+                                    <h3>Select an option</h3>
+                                </div>
+                            </div>
+                        </a>
                     <!--ADD STUDENT MODAL-->
                       <div class="add-student-modal" id="add-student-modal">
                         <div class="student-modal-content">
                             <span style="display: flex; flex-direction: row; align-items: center; justify-content: space-between;">
-                                <h2>Add Student</h2>
+                                <h2>Add Student Info</h2>
                                 <div class="padding-lg"></div>
                                 <a href="#" class="button-close"><i class="fa-solid fa-xmark fa-2x"></i></a>
                             </span>
@@ -59,19 +69,18 @@
                             height: 4px;
                             background-color: var(--uscgreen);
                             border: none;">
-
                             <div class="nice-form-group">
-                                <label>Name of Student</label>
-                                <input type="text" placeholder="Student Name" />
+                                <label>Name of Student<span style="color: var(--uscred)"> *</span></label>
+                                <input id="add-student-name" type="text" placeholder="Student Name" />
                             </div>
                             <div class="nice-form-group">
-                                <label>Student ID</label>
-                                <input type="number" placeholder="ex. 22103604" />
+                                <label>Student ID<span style="color: var(--uscred)"> *</span></label>
+                                <input id="add-student-id" type="number" placeholder="ex. 22103604" />
                               </div>
                             
                             <div class="nice-form-group">
-                                <label>Blocksection</label>
-                                <select>
+                                <label>Blocksection<span style="color: var(--uscred)"> *</span></label>
+                                <select id="add-blocksection">
                                   <option>STEM 12 ST</option>
                                   <option>STEM 12 S1</option>
                                   <option>STEM 12 S2</option>
@@ -93,13 +102,12 @@
                                   <option>STEM 12 E5</option>
                                   <option>STEM 12 E6</option>
                                   <option>STEM 12 E7</option>
-
                                 </select>
                             </div>
 
                             <div class="nice-form-group">
-                                <label>Select Violation</label>
-                                <select>
+                                <label>Select Violation<span style="color: var(--uscred)"> *</span></label>
+                                <select id="add-violation">
                                   <option>20.1.1 Entering the University campus without a valid USC SHS ID</option>
                                   <option>20.1.2 Not wearing the official USC SHS ID on campus</option>
                                   <option>20.1.3 Using two or more ID cards or gate pass by whatever means or manner</option>
@@ -109,13 +117,24 @@
 
                             <div class="nice-form-group">
                                 <label>Details of Violation/Offense</label>
-                                <textarea rows="5" value=""></textarea>
+                                <textarea id="add-details-violation" rows="5" value=""></textarea>
                               </div>
 
                               <div class="nice-form-group">
-                                <label>Date of Violation/Offense Committed</label>
-                                <input type="date" value="2023-09-16" />
+                                <label>Date of Violation/Offense Committed<span style="color: var(--uscred)"> *</span></label>
+                                <input id="add-violation-date" type="date" value="2023-09-16" />
                               </div>
+
+                              <div class="nice-form-group">
+                                <label>Add picture</label>
+                                <input type="file" />
+                              </div>
+
+                              <div class="padding-sm"></div>
+                              <button class="button-4" role="button" >Cancel</button>
+                              <button id="submit-button" class="button-3" role="button">Submit</button>
+                              
+
                         </div>
                       </div>
 
@@ -162,17 +181,9 @@
                         </div>
                       </div>
 
+                    <div class="padding-lg"></div>
+                    <h1 class="main-header">Student List</h1>
                     <div class="ac-vio-array">
-                        <a class="button-open-add" href="#add-student-modal">
-                            <div class="add-student-wrapper">
-                                <i class="fa-solid fa-plus fa-2x"></i>
-                                <div class="info">
-                                    <h2>Add Student</h2>
-                                    <h3>Select an option</h3>
-                                </div>
-                            </div>
-                        </a>
-
                         <a class="button-open-profile" href="#student-profile-modal">
                             <div class="student-active-wrapper">
                                 <i class="fa-solid fa-user fa-2x"></i>

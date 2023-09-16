@@ -3,8 +3,12 @@
     --uscblue: #009DDC;
     --uscred: #EE2E24;
     --uscyellow: #FFC423;
+
 }
 
+.nice-form-group {
+    --nf-input-focus-border-color: #00A950 !important;
+}
 
 .padding-sm {
     padding: 10px;

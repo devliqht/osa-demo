@@ -10,7 +10,7 @@
     background: var(--uscgreen);
     border-radius: 8px;
 
-    
+    width: fit-content;
     height: fit-content;
     padding: 15px;
     padding-right: 4em;
