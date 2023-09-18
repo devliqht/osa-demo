@@ -47,16 +47,38 @@
             </header>
             <main>
                 <div class="main-body-wrapper">
-                    <h1 class="main-header">Today is <span id="today-date" style="color: var(--uscgreen);">17 September 2023</span>, <span id="today-time" style="color: var(--uscgreen);">12:05 PM</span></h1>
+                    <span class="header-links"><h3>ISMIS Helpdesk</h3><div class="padding-sm"></div><h3>Canvas LMS</h3><div class="padding-sm"></div><h3>USC Official Website</h3><div class="padding-sm"></div><h3>USC Facebook Page</h3><div class="padding-sm"></div><h3>Contact</h3></span>
+                    <div class="padding-lg"></div>
+                    <h1 class="main-header">Today is <span id="today-date" style="color: var(--uscgreen);">18 September 2023</span>, <span id="today-time" style="color: var(--uscgreen);">9:56 PM</span></h1>
+                    <span style="display: flex; flex-direction: row;">
                         <a class="button-open-add" href="#add-student-modal">
                             <div class="add-student-wrapper">
                                 <i class="fa-solid fa-plus fa-2x"></i>
                                 <div class="info">
-                                    <h2>Add Student</h2>
-                                    <h3>Select an option</h3>
+                                    <h2>Add</h2>
+                                    <h3>Student Info</h3>
                                 </div>
                             </div>
                         </a>
+                        <a class="button-open-add" href="">
+                            <div class="yellow add-student-wrapper">
+                                <i class="fa-solid fa-download fa-2x"></i>
+                                <div class="info">
+                                    <h2>Export</h2>
+                                    <h3>.CSV .XSLS</h3>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="button-open-add" href="">
+                            <div class="blue add-student-wrapper">
+                                <i class="fa-solid fa-clock-rotate-left fa-2x"></i>
+                                <div class="info">
+                                    <h2>History</h2>
+                                    <h3>Recent</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </span>
                     <!--ADD STUDENT MODAL-->
                       <div class="add-student-modal" id="add-student-modal">
                         <div class="student-modal-content">
@@ -209,6 +231,15 @@
                             <div class="info">
                                 <h2>Alfay-aht Akbar</h2>
                                 <h3>Status: <span style="color: var(--uscgreen);">Resolved</span></h3>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical fa-2x"></i>
+                        </div>
+
+                        <div class="student-active-wrapper">
+                            <i class="fa-solid fa-user fa-2x"></i>
+                            <div class="info">
+                                <h2>John Paul Yap</h2>
+                                <h3>Status: <span style="color: var(--uscred);">Active Violation</span></h3>
                             </div>
                             <i class="fa-solid fa-ellipsis-vertical fa-2x"></i>
                         </div>
